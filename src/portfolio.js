@@ -58,7 +58,7 @@ let generateProjects = () => {
           </ul>
       </div>
       <div class="ds-buttons">
-        <button onclick="${webButton}">Website</button>
+        <button <a href="https://offthewaugh.github.io/clothingstore/index.html">>Website<a/></button>
         <button onclick="${codeButton}">Code</button>
       </div>
       <div class="sources">
