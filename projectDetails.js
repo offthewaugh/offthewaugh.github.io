@@ -21,6 +21,7 @@ let projectItems = [
     <li>codecademy</li>
     <li>w3schools</li>`,
     sourcesImage: `https://www.equityinhighered.org/wp-content/uploads/2018/08/ACE_datasources_icon.svg"`,
+    webButton: "https://offthewaugh.github.io/clothingstore/index.html",
     codeButton:
       "https://github.com/offthewaugh/clothing-store/tree/main/Clothing%20Store",
   },

@@ -58,7 +58,7 @@ let generateProjects = () => {
           </ul>
       </div>
       <div class="ds-buttons">
-        <button>Website</button>
+        <button onclick="${webButton}">Website</button>
         <button onclick="${codeButton}">Code</button>
       </div>
       <div class="sources">
