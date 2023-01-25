@@ -93,20 +93,50 @@
   font-size: 15px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 950px) {
   .projects {
-    grid-template-columns: repeat(2, 300px);
+    grid-template-columns: repeat(1, 500px);
+    font-size: 10px;
   }
   .projects img {
-    width: 200px;
+    width: 50px;
+  }
+  .projects .container-image {
+    width: 100px;
+  }
+  .bio {
+    font-size: 14px;
+  }
+  .ds-buttons button {
+    background-color: #6c757d;
+    border-radius: 4px;
+    font-size: 8px;
+    cursor: pointer;
+    width: 40px;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .projects {
-    grid-template-columns: repeat(1, 300px);
+    grid-template-columns: repeat(1, 500px);
+    font-size: 8px;
   }
   .projects img {
-    width: 200px;
+    width: 50px;
+  }
+  .projects .container-image {
+    width: 75px;
+  }
+  .ds-buttons {
+    flex-direction: column;
+    display: flex;
+    gap: 30px;
+  }
+  .ds-buttons button {
+    background-color: #6c757d;
+    border-radius: 4px;
+    font-size: 4px;
+    cursor: pointer;
+    width: 25px;
   }
 }
