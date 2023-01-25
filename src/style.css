@@ -92,3 +92,21 @@
   border-top: 1px black solid;
   font-size: 15px;
 }
+
+@media (max-width: 1000px) {
+  .projects {
+    grid-template-columns: repeat(2, 300px);
+  }
+  .projects img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  .projects {
+    grid-template-columns: repeat(1, 300px);
+  }
+  .projects img {
+    width: 200px;
+  }
+}
