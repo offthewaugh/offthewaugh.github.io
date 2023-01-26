@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+#navbar {
+  background-color: #6c757d;
+  font-size: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+#navbar li a {
+  color: white;
+  margin: 20px 30px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#navbar li {
+  list-style-type: none;
+  float: left;
+}
+
+.bio {
+  display: flex;
+  font-size: 18px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.bio-details {
+  display: flex;
+  text-align: center;
+  width: 50%;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  border: 2px solid black;
+  width: 75%;
+  border-radius: 5px;
+}
+.container-image {
+  border-right: 2px solid black;
+}
+.description h3 {
+  align-items: center;
+  text-align: center;
+}
+.development-sources {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.development .sources {
+  flex-direction: column;
+}
+.development-sources li {
+  list-style-type: circle;
+}
+.ds-buttons {
+  flex-direction: column;
+  display: flex;
+  gap: 50px;
+  padding-top: 30px;
+}
+.ds-buttons button {
+  background-color: #6c757d;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 75px;
+}
+
+.about {
+  margin-top: 50px;
+  text-align: center;
+  border-top: 1px black solid;
+  font-size: 15px;
+}
+
+@media (max-width: 950px) {
+  .projects {
+    grid-template-columns: repeat(1, 500px);
+    font-size: 10px;
+  }
+  .projects img {
+    width: 50px;
+  }
+  .projects .container-image {
+    width: 150px;
+    background-color: black;
+  }
+  .bio {
+    font-size: 14px;
+  }
+  .ds-buttons button {
+    background-color: #6c757d;
+    border-radius: 4px;
+    font-size: 8px;
+    cursor: pointer;
+    width: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects {
+    display: flex;
+    font-size: 8px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .projects img {
+    width: 50px;
+  }
+  .projects .container-image {
+    width: 75px;
+  }
+  .ds-buttons {
+    flex-direction: column;
+    display: flex;
+    gap: 30px;
+  }
+  .ds-buttons button {
+    background-color: #6c757d;
+    border-radius: 4px;
+    font-size: 8px;
+    cursor: pointer;
+    width: 30px;
+    text-decoration: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    border: 2px black solid;
+    margin: 10px;
+    align-items: center;
+  }
+
+  .description h3 {
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+  }
+  .development-sources {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .development .sources {
+    flex-direction: column;
+  }
+  .development-sources li {
+    list-style-type: circle;
+  }
+}
