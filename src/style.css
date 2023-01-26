@@ -118,8 +118,11 @@
 
 @media (max-width: 600px) {
   .projects {
+    display: grid;
     grid-template-columns: repeat(1, 500px);
     font-size: 8px;
+    gap: 20px;
+    align-items: center;
   }
   .projects img {
     width: 50px;
@@ -138,5 +141,33 @@
     font-size: 4px;
     cursor: pointer;
     width: 25px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    border: 2px black solid;
+    margin: 10px;
+    align-items: center;
+  }
+
+  .description h3 {
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+  }
+  .development-sources {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .development .sources {
+    flex-direction: column;
+  }
+  .development-sources li {
+    list-style-type: circle;
   }
 }
