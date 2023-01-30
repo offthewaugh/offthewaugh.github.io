@@ -6,25 +6,18 @@ let bio = document.getElementById("bio");
 
 let details = JSON.parse(localStorage.getItem("projectDetails")) || [];
 
-let generateBio = () => {
-  return (bio.innerHTML = `
-  <div class="bio-details">
-  <h3>
-    My name is Christopher Waugh based in Cincinnati, Ohio, USA.
-    I'm a self taught/college course developer and my main focus is front end
-    development. The skills demonstrated in my porfolio are JavaScript,
-    React, HTML/CSS, and Bootstrap.
-  </h3>
-</div>
-`);
-};
-
-let generateAbout = () => {
-  return (about.innerHTML = `
-  <h3>Contact:</h3>
-  <p>Email: chriswaugh.contact@gmail.com</p>
-  <p>Mobile: 513-926-6094</p>`);
-};
+// let generateBio = () => {
+//   return (bio.innerHTML = `
+//   <div class="bio-details">
+//   <h3>
+//     My name is Christopher Waugh based in Cincinnati, Ohio, USA.
+//     I'm a self taught/college course developer and my main focus is front end
+//     development. The skills demonstrated in my porfolio are JavaScript,
+//     React, HTML/CSS, and Bootstrap.
+//   </h3>
+// </div>
+// `);
+// };
 
 let generateProjects = () => {
   return (projects.innerHTML = projectItems
@@ -75,6 +68,5 @@ ${sources}
     .join(""));
 };
 
-generateBio();
-generateAbout();
+// generateBio();
 generateProjects();
