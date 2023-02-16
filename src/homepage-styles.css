@@ -11,16 +11,12 @@
   align-items: center;
 }
 
-.images-container {
-  position: relative;
-}
-.images-container img {
-  position: relative;
-  height: 700px;
-  width: 100%;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  z-index: -1;
+body {
+  background-image: url(../images/galaxy1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
 }
 .images-container p {
   position: absolute;

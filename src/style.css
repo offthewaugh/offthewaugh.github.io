@@ -3,35 +3,41 @@
   padding: 0;
   box-sizing: inherit;
 }
+body {
+  background-image: url(../images/galaxy1.jpg);
+  background-size: cover;
 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: black;
+  color: white;
+}
 #navbar {
-  background-color: #6c757d;
   font-size: 20px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   width: 100%;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#navbar li a {
+.navbar li a {
   color: white;
-  margin: 20px 30px;
-  display: inline-block;
   text-decoration: none;
 }
 
-#navbar li {
+.navbar li {
+  text-align: center;
+  margin: 20px 30px;
   list-style-type: none;
-  float: left;
 }
 
-.bio {
-  display: flex;
-  font-size: 18px;
-  justify-content: center;
-  width: 50%;
-  align-items: center;
+.navbar li a:hover {
+  color: gold;
 }
 
 .projects {
@@ -39,16 +45,17 @@
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  margin-top: 50px;
 }
 
 .container {
   display: flex;
-  border: 2px solid black;
+  border: 2px solid white;
   width: 75%;
   border-radius: 5px;
 }
 .container-image {
-  border-right: 2px solid black;
+  border-right: 2px solid white;
 }
 .description h3 {
   align-items: center;

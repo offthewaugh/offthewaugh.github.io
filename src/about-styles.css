@@ -6,27 +6,12 @@
 
 body {
   text-align: center;
-}
-.navbar {
-  background-color: #6c757d;
-  font-size: 20px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  overflow: hidden;
-}
+  background-image: url(../images/galaxy1.jpg);
+  background-size: cover;
 
-.navbar li a {
-  color: white;
-  margin: 20px 30px;
-  display: inline-block;
-  text-decoration: none;
-}
-
-.navbar li {
-  list-style-type: none;
-  float: left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: black;
 }
 
 .about {
