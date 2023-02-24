@@ -4,13 +4,12 @@
   box-sizing: inherit;
 }
 body {
-  background-image: url(../images/galaxy1.jpg);
   background-size: cover;
 
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-color: black;
+  background-color: #000814;
   color: white;
 }
 #navbar {
@@ -23,6 +22,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #001d3d;
+  z-index: 1;
 }
 
 .navbar li a {
@@ -32,59 +33,164 @@ body {
 
 .navbar li {
   text-align: center;
-  margin: 20px 30px;
+  margin: 15px 30px;
   list-style-type: none;
 }
 
 .navbar li a:hover {
   color: gold;
 }
+.biowrap {
+  padding-top: 15px;
+}
+.home-background {
+  background-image: url(../images/cincinnati.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 600px;
+}
+.home-background h1 {
+  position: absolute;
+  top: 15%;
+  left: 37%;
+  color: #ffc300;
+  font-size: 40px;
+}
+.home-background h4 {
+  position: absolute;
+  top: 25%;
+  left: 41%;
 
-.projects {
+  color: #ffc300;
+  font-size: 40px;
+}
+.home-background-button button {
+  position: absolute;
+  top: 40%;
+  left: 46%;
+
+  background-color: #ffc300;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+}
+
+.bio {
+  display: flex;
+  margin-top: 50px;
+  font-size: 18px;
+  text-align: left;
+  border: 2px solid white;
+  margin-left: 100px;
+  margin-right: 100px;
+  gap: 20px;
+}
+.bio-pic {
+  display: flex;
+  width: 300px;
+}
+
+.bio-info {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  align-items: center;
+  text-align: center;
+}
+
+.bio-details {
+  margin-top: 30px;
+  text-align: left;
+}
+.project-wrap {
+  padding-top: 20px;
+}
+.project-header {
+  text-align: center;
   margin-top: 50px;
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(1, 700px);
+  gap: 50px;
+  margin-top: 50px;
+  justify-content: center;
 }
 
 .container {
   display: flex;
-  border: 2px solid white;
-  width: 75%;
-  border-radius: 5px;
+  flex-direction: column;
+  border-radius: 6px;
+  background-color: #001d3d;
 }
-.container-image {
-  border-right: 2px solid white;
+.container-images {
+  display: flex;
+  justify-content: center;
 }
-.description h3 {
+.container-images img {
+  width: 700px;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 20px;
   align-items: center;
+}
+
+.description {
   text-align: center;
 }
-.development-sources {
-  padding-top: 20px;
+.description-buttons {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 80px;
+  padding-bottom: 20px;
 }
-.development .sources {
-  flex-direction: column;
-}
-.development-sources li {
-  list-style-type: circle;
-}
-.ds-buttons {
-  flex-direction: column;
-  display: flex;
-  gap: 50px;
-  padding-top: 30px;
-}
-.ds-buttons button {
-  background-color: #6c757d;
-  border-radius: 4px;
+.project-info button {
+  margin-top: 20px;
+  background-color: #ffc300;
+  border-radius: 10px;
   font-size: 16px;
   cursor: pointer;
-  width: 75px;
+  width: 100px;
+  height: 30px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  height: 450px;
+  text-align: center;
+  background-color: #003566;
+  justify-content: center;
+}
+.contact-pic {
+  gap: 70px;
+  display: flex;
+  justify-content: center;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 30px;
+  justify-content: center;
+  text-align: left;
+}
+.about-home-button button {
+  align-items: center;
+  margin-top: 20px;
+  background-color: #ffc300;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
 }
 
 @media (max-width: 950px) {

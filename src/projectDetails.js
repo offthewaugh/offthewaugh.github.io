@@ -1,7 +1,8 @@
 let projectItems = [
   {
     id: "cloting store/shopping cart",
-    img: "https://www.shutterstock.com/shutterstock/photos/2104754999/display_1500/stock-vector-clothing-store-logo-design-inspiration-vector-illustration-2104754999.jpg",
+    title: "Clothing Store",
+    img: "images/Clothing-Shop-Image.png",
     description: `The clothing website is built with JavaScript using different
     functions and methods. The website allows the user to select the
     quantity of an item and then proceed to checkout with all items
@@ -26,11 +27,9 @@ let projectItems = [
   },
   {
     id: "Matching-Game",
+    title: "Matching Game",
     img: "https://st.depositphotos.com/2885805/3842/v/600/depositphotos_38422667-stock-illustration-coming-soon-message-illuminated-with.jpg",
-    description: `The clothing website is built with JavaScript using different
-    functions and methods. The website allows the user to select the
-    quantity of an item and then proceed to checkout with all items
-    selected.`,
+    description: `Match all the animals in order to win the game!`,
     development: ` 
     <h3>Development</h3>
     <li>JavaScript</li>

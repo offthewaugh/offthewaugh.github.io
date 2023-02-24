@@ -4,35 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Chris Waugh</title>
     <link rel="stylesheet" href="src/style.css" />
-    <link rel="stylesheet" href="src/homepage-styles.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
   </head>
+  <header></header>
   <body>
     <div id="navbar" class="navbar">
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#biowrap">About</a></li>
+      <li><a href="#project-wrap">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
     </div>
-    <div id="images-container" class="images-container">
-      <div id="bio" class="bio">
-        <p>
-          My name is Christopher Waugh based in Cincinnati, Ohio, USA. I'm a
-          self taught/college course developer and my main focus is front end
-          development. The skills demonstrated in my porfolio are JavaScript,
-          React, HTML/CSS, and Bootstrap.
-        </p>
+    <div id="home-background" class="home-background">
+      <h1>Hi, I'm Chris Waugh</h1>
+      <h4>Web Developer</h4>
+      <div id="home-background-button" class="home-background-button">
+        <a href="#project-wrap"><button>Projects</button></a>
       </div>
-
-      <div class="image-home-button">
-        <a href="projects.html"><button>Projects</button></a>
-        <a href="projects.html"><button>About</button></a>
+    </div>
+    <div id="biowrap" class="biowrap"></div>
+    <div id="project-wrap" class="project-wrap">
+      <div id="project-header" class="project-header">
+        <h1>Projects</h1>
+      </div>
+      <div id="projects" class="projects">
+        <div id="container" class="container"></div>
       </div>
     </div>
   </body>
+  <div id="contact" class="contact"></div>
+  <script src="src/projectDetails.js"></script>
+  <script src="src/portfolio.js"></script>
 </html>
