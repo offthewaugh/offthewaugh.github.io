@@ -32,7 +32,7 @@ let generateBio = () => {
 let generateContact = () => {
   return (contact.innerHTML = `
   <div id="contact-pic" class="contact-pic">
-  <img width=500 height=400 src="images/contact-pic.jpg"
+  <img width=400 height=300 src="images/contact-pic.jpg"
 </div>
 <div id="contact-info" class="contact-info">
   <h3>Contact:</h3>
