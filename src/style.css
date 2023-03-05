@@ -12,7 +12,7 @@ body {
   background-color: #000814;
   color: white;
 }
-#navbar {
+.navbar {
   font-size: 20px;
   position: -webkit-sticky;
   position: sticky;
@@ -27,6 +27,8 @@ body {
 }
 
 .navbar li a {
+  transition: all 0.45s ease;
+
   color: white;
   text-decoration: none;
 }
@@ -45,7 +47,8 @@ body {
 }
 .home-background {
   background-image: url(../images/cincinnati.jpg);
-  background-size: 100%;
+  width: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -196,11 +199,11 @@ body {
 
 @media (max-width: 1000px) {
   .home-background {
-    background-size: 100% 600px;
+    width: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    height: 600px;
   }
   .home-background h1 {
     position: absolute;
@@ -264,12 +267,19 @@ body {
 }
 
 @media (max-width: 700px) {
+  .navbar {
+    display: block;
+    justify-content: left;
+  }
+  .navbar li {
+    text-align: left;
+  }
   .home-background {
-    background-size: 100% 500px;
+    width: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    height: 400px;
   }
   .home-background h1 {
     position: absolute;

@@ -18,9 +18,9 @@ let generateBio = () => {
     </div>
     <div class="bio-details">
       <h3>
-        My name is Christopher Waugh based in Cincinnati, Ohio, USA and willing to relocate. I'm a
-        self taught/college course developer and my main focus is front
-        end development. I am very hard-working and can fit with any team.
+        My name is Christopher Waugh based in Cincinnati, Ohio, USA and willing to relocate. 
+        I'm a motivated, hard-working individual who is always looking for new opportunities.
+        I got into web development because I wanted to build my own websites. I taught myself by reading tutorials and watching YouTube videos.
         The skills demonstrated in my portfolio are JavaScript, React,
         HTML/CSS, and Bootstrap.
       </h3>
