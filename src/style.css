@@ -24,11 +24,10 @@ body {
   justify-content: center;
   background-color: #001d3d;
   z-index: 1;
+  transition: all 0.45s ease;
 }
 
-.navbar li a {
-  transition: all 0.45s ease;
-
+.navbar a {
   color: white;
   text-decoration: none;
 }
@@ -41,18 +40,21 @@ body {
 
 .navbar li a:hover {
   color: gold;
+  transition: all 0.45s ease;
 }
 .biowrap {
   padding-top: 15px;
 }
 .home-background {
+  display: flex;
   background-image: url(../images/cincinnati.jpg);
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  height: 600px;
+  height: 100vh;
+  align-items: center;
 }
 .home-background h1 {
   position: absolute;
@@ -134,7 +136,7 @@ body {
 }
 .container-images img {
   width: 700px;
-  height: 353px;
+  /* height: 353px; */
 }
 
 .project-info {
